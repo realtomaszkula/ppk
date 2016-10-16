@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 class SliderWrapper {
-  openOrClosed = false;
-  constructor(public title: string, public content: string[]) {}
+  openOrClosed = true;
+  constructor(public title: string, public content?: string[]) {}
 }
 
 @Component({
@@ -10,8 +10,9 @@ class SliderWrapper {
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
+  form = new SliderWrapper('Form');
   private telephone = new SliderWrapper('Telephone number', ['+46 736 34 32 35']);
   private adress = new SliderWrapper('Adress', 
     ["Herkulesgatan",
@@ -23,8 +24,6 @@ export class ContactComponent implements OnInit {
   sliderItems: SliderWrapper[] = [this.telephone, this.adress, this.socialMedia];
 
   constructor() { }
-
-  ngOnInit() {
 
 }
 

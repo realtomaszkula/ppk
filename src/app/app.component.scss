@@ -1,5 +1,10 @@
 @import '../global';
 
+.body {
+    background: $main-background-color;
+
+}
+
 .site {
   display: flex;
   min-height: 100vh;
@@ -22,8 +27,11 @@ footer, nav, header {
   }
 }
 
+// main 
+
 main {
-  background: $main-background-color;
+  align-self: center;
+  min-width: 60em;
 }
 
 // header
