@@ -2,10 +2,10 @@
   <header>
     <span class="logo">Pawel Paul Kula</span>
     <span class="remaining-space"></span>
-    <i class="material-icons">reorder</i>
+    <i class="material-icons" (click)="open = !open">reorder</i>
  </header>
 
- <nav>
+ <nav [@openClose]="open ? 'open' : 'close'">
    <a>Career</a>
    <a>Gallery</a>
    <a>Contact</a>
@@ -13,10 +13,7 @@
    <a>Homeland</a>
  </nav>
 
-
-
   <main class="site-content">
-
   </main>
 
   <footer>
