@@ -37,6 +37,26 @@ header {
 
 }
 
+// nav
+nav {
+  border-bottom: 1px solid $primary-color;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  
+  a {
+    padding: 1em;
+    align-self: center;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
 // footer
 footer {
   display: flex;
