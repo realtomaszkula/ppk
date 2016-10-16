@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CareerComponent } from './career/career.component';
 import { ContactComponent } from './contact/contact.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
     WelcomeComponent,
     CareerComponent,
     ContactComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,

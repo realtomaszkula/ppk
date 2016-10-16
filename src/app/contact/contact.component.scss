@@ -1,6 +1,32 @@
 @import '../../global';
 
 :host {
-  display: flex;
   padding: 2em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 80em;
+}
+
+section {
+  margin: 1em;
+  flex: 0 0 50%;
+}
+
+@media screen and (max-width: 915px) {
+  main {
+    flex-direction: column;
+  }
+
+  section, figure {
+    flex: 1 100%;
+  }
+
+  figure { 
+    align-self: center;
+    order: 1;
+  }
 }

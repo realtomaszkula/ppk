@@ -1,0 +1,28 @@
+@import '../../global';
+
+:host, ng-content {
+    display: block;
+}
+
+header {
+  background: $primary-color;
+  padding: 1em;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    background: lighten($primary-color, 5%);
+  }
+}
+
+article {
+  text-align: center;
+  background: lighten($primary-color, 45%);
+  overflow: hidden;
+
+  div {
+    margin: 1em;
+  }
+
+}

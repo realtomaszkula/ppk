@@ -1,0 +1,24 @@
+
+
+<main>
+  <figure>
+    <img src="../../assets/ppk.jpg" alt="Pawel Paul Kula" class="img-responsive">
+  </figure>
+
+  <section>
+    <app-slider *ngFor="let item of sliderItems" [open]="item.openOrClose">
+      <div class="header">
+        {{item.title}}
+      </div>
+      <div class="content">
+        <p *ngFor="let line of item.content">
+          {{line}}
+        </p>
+      </div>
+    </app-slider>
+
+
+  </section>
+
+
+</main>

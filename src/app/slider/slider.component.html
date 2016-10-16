@@ -1,0 +1,13 @@
+<div class="container">
+
+  <header (click)="toggle()">
+    <ng-content select=".header"></ng-content>
+  </header>
+
+  <article [@openClose]="open ? 'open' : 'closed'">
+    <div>
+      <ng-content select=".content"></ng-content>
+    </div>
+  </article>
+
+</div>

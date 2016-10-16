@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-
+class SliderWrapper {
+  openOrClosed = false;
+  constructor(public title: string, public content: string[]) {}
+}
 
 @Component({
   selector: 'app-contact',
@@ -9,26 +12,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  adress = [
-    "Herkulesgatan 22",
-    "341 33 Ljungby",
-    "Sweden"
-    ]
+  private telephone = new SliderWrapper('Telephone number', ['+46 736 34 32 35']);
+  private adress = new SliderWrapper('Adress', 
+    ["Herkulesgatan",
+      "22 341",
+      "33 Ljungby Sweden"
+    ]);
+  private socialMedia = new SliderWrapper('SocialMedia', ['Twitter', 'Facebook', 'LinkedIn']);
 
-  phone = [
-    '+46 736 34 32 35'
-  ]
-
-  socialMedia: { icon: string, url: string }[] = [
-    { icon: 'home', url: '' },
-    { icon: 'home', url: '' },
-    { icon: 'home', url: '' },
-  ]
+  sliderItems: SliderWrapper[] = [this.telephone, this.adress, this.socialMedia];
 
   constructor() { }
 
   ngOnInit() {
-  }
 
 }
 
