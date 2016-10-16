@@ -1,0 +1,32 @@
+$primary-color: #3f51b5;
+$lighter-primary: lighten($primary-color, 40%);
+$darker-primary: darken($primary-color, 5%);
+$nav-color: slategray;
+$basic-font-size: 1.2em;
+$main-background-color: #fafafa;
+
+.btn {
+  background: $primary-color;
+  padding: 1em 2em;
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+
+  &:active, &:focus {
+    outline: 0 none;
+  }
+
+    &:active, &:focus {
+      outline: 0 none;
+    }
+
+    &:active, &:focus, &:active, &:hover{
+      background: $darker-primary;
+    }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

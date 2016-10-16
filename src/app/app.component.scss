@@ -1,9 +1,4 @@
-$primary-color: #3f51b5;
-$lighter-primary: lighten($primary-color, 40%);
-$nav-color: slategray;
-$basic-font-size: 1.2em;
-$main-background-color: #fafafa;
-
+@import '../global';
 
 .site {
   display: flex;
