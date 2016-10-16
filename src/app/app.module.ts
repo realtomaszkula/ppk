@@ -7,12 +7,14 @@ import { appRouting } from './app.routing';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CareerComponent } from './career/career.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     CareerComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

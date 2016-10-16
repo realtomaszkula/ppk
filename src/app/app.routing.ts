@@ -3,12 +3,14 @@ import { ModuleWithProviders } from '@angular/core';
 
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CareerComponent } from './career/career.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: 'welcome', component: WelcomeComponent },
-  { path: 'career', component: CareerComponent }
+  { path: 'career', component: CareerComponent },
+  { path: 'contact', component: ContactComponent },
 ]
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
