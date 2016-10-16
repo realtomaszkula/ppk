@@ -1,0 +1,14 @@
+<article *ngFor="let background of backgrounds" class="card">
+  <header>
+    <i class="material-icons">home</i>
+    <p> 
+{{ background.title }}</p>
+    </header>
+
+  <main>
+    <section *ngFor="let achievement of background.achievements">
+      <p>{{ achievement.years }}</p>
+      <p>{{ achievement.content }}</p>
+    </section>
+  </main>
+</article>

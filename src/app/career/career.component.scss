@@ -1,0 +1,58 @@
+@import '../../global';
+
+:host {
+  display: flex;
+  padding: 1em;
+}
+
+article {
+  margin: 1em;
+  flex: 1;
+}
+
+header {
+  font-size: 24px;
+  display: flex;
+  color: white;
+  background: $primary-color;
+  padding: 0.3em 0.3em 0.3em 1em;
+  i {
+    flex: 0 2em;
+    align-self: center;
+  }
+
+}
+
+main {
+  section {
+    cursor:default;
+
+    &:hover {
+      background: lighten($primary-color, 40%);
+    }
+    p {
+      padding: 1em;
+      margin: 0 1em 0 1em;
+    }
+
+    display: flex;
+    justify-content: flex-start;
+
+    p:first-child {
+      font-weight: 700;
+      flex: 0 0 7em;
+    }
+
+    p:last-child {
+      flex: 0 1 auto;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+    :host {
+      flex-direction: column;
+    }
+}
