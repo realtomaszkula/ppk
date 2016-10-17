@@ -16,8 +16,7 @@ export class SliderComponent   {
 
   constructor() { }
 
-  @Input('open')
-  public open = true;
+  @Input('open')  public open = true;
 
   toggle() {
     this.open = !this.open;

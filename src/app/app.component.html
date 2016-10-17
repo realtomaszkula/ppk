@@ -2,12 +2,16 @@
   <header>
     <span class="logo" routerLink="/welcome">Pawel Paul Kula</span>
     <span class="remaining-space"></span>
-    <i class="material-icons" (click)="open = !open">reorder</i>
+    <span  class="icons">
+      <i class="material-icons">account_box</i>
+      <i class="material-icons">face</i>
+      <i class="material-icons">extension</i>
+    </span>
  </header>
 
- <nav [@openClose]="open ? 'open' : 'close'">
-   <a routerLink="/career">Career</a>
-   <a routerLink="/contact">Contact</a>
+ <nav >
+   <a routerLinkActive="nav-active" routerLink="/career">Career</a>
+   <a routerLinkActive="nav-active" routerLink="/contact">Contact</a>
    <a>Contact</a>
    <a>Blog</a>
    <a>Homeland</a>
@@ -18,9 +22,12 @@
   </main>
 
   <footer>
-    <a>Fb</a>
-    <a>Twitter</a>
-    <a>Ln</a>
+    <figure class="media">
+      <a href="">
+          <img class="media-figure" src="../assets/gh_32px.png" alt="git hub icon">
+      </a>
+      <p class="media-body">Created by Tomasz Kula</p>
+    </figure> 
   </footer>
 
 </div>
