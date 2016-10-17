@@ -2,13 +2,17 @@ export class Person {
   constructor(public name: string, public url: string, public content: string) {}
 }
 
+const path = '../../../assets/';
+
 const urls = {
-  jp2: '../../../Jan_Pawel_II.jpg',
-  regan: '../../../President_Regan.jpg',
-  margaret: '../../../Margaret_Thatcher.jpg',
-  szczeklik: '../../..Andrzej_Szczeklik.jpg',
-  kiezun: '../../..Witold_Kieżun.jpg',
-}
+  jp2: path + 'Jan_Pawel_II.jpg',
+  regan: path + 'President_Regan.jpg',
+  margaret: path + 'Margaret_Thatcher.jpg',
+  szczeklik: path + 'Andrzej_Szczeklik.jpg',
+  kiezun: path + 'Witold_Kieżun.jpg',
+};
+
+
 export const authorities: Person[] = [
   new Person('Pope Saint John Paul II ', urls.jp2 , `
  Pope Saint John Paul II was elected by the second Papal conclave of 1978, which was called after Pope John Paul I, who had been elected in August after the death of Pope Paul VI, died after thirty-three days. 
@@ -43,8 +47,8 @@ Currently, 94-year-old Witold Kieżun continues writing articles and delivering 
 ]
 
 
-export const authoritiesMap: Map<string, Person> = new Map([
-  ['JP2', authorities[0]],
+ export const authoritiesMap: Map<string, Person> = new Map([
+  ['jp2', authorities[0]],
   ['ronald-regan', authorities[1]],
   ['margaret-thatcher', authorities[2]],
   ['andrzej-szczeklik', authorities[3]],

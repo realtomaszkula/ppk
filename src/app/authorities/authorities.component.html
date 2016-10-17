@@ -1,7 +1,7 @@
 <h1>My authorities</h1>
 
-<figure>
-    <img src="" alt="">
-</figure>
+<nav>
+  <a *ngFor="let authority of authorities" routerLink="{{authority.url}}">{{authority.name}}</a>
+</nav>
 
 <router-outlet></router-outlet>
