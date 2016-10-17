@@ -5,7 +5,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { CareerComponent } from './career/career.component';
 import { ContactComponent } from './contact/contact.component';
 
-
 const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: 'welcome', component: WelcomeComponent },
