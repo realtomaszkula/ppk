@@ -11,18 +11,20 @@ $main-background-color: #fafafa;
   color: white;
   letter-spacing: 0.1em;
   font-weight: 700;
+  border: none;
+  border-radius: 2em;
 
   &:active, &:focus {
     outline: 0 none;
   }
-
-    &:active, &:focus {
-      outline: 0 none;
-    }
-
     &:active, &:focus, &:active, &:hover{
       background: $darker-primary;
     }
+
+}
+
+a {
+  text-decoration: none;
 }
 
 .img-responsive {

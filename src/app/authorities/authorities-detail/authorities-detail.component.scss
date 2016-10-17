@@ -1,35 +1,56 @@
 
 :host {
   display: flex;
-  padding: 2em;
   font-size: 1.2em;
+  margin: 0 2em;
 }
 
 
-@media screen and (max-width: 650px) {
-  :host {
-  flex-direction: column;
-  section {
-    column-count: 1;
-  }
-  figure {
-      align-self: center;
-    }
-  }
+section {
+  margin-right: 2em;
 }
 
-@media screen and (min-width: 666px) and (max-width: 950px) {
+figure {
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 0.5em 0;
+}
+
+@media screen and  (max-width: 1000px) {
   :host {
     flex-direction: column;
-    section {
-      column-count: 2;
-      h2 {
-        column-span: all;
-      }
-    }
+
     figure {
-      align-self: center;
+      margin-top: 2em;
+      order: 1;
+    }
+
+    section {
+      margin: 0;
     }
   }
 }
 
+@media screen and (max-width: 640px) {
+  :host, section {
+    padding: 2em;
+  }
+
+  figure {
+    text-align: center;
+  }
+
+  section {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
