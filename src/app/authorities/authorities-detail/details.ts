@@ -6,10 +6,10 @@ const path = '../../../assets/';
 
 const urls = {
   jp2: path + 'Jan_Pawel_II.jpg',
-  regan: path + 'President_Regan.jpg',
+  regan: path + 'President_Reagan.jpg',
   margaret: path + 'Margaret_Thatcher.jpg',
   szczeklik: path + 'Andrzej_Szczeklik.jpg',
-  kiezun: path + 'Witold_Kieżun.jpg',
+  kiezun: path + 'Witold_Kiezun.jpg',
 };
 
 
@@ -32,13 +32,13 @@ She was the longest-serving British Prime Minister of the 20th century and is cu
 A Soviet journalist dubbed her the "Iron Lady", a nickname that became associated with her uncompromising politics and leadership style. 
 As Prime Minister, she implemented policies that have come to be known as Thatcherism. Her political philosophy and economic policies emphasised deregulation, flexible labour markets, the privatisation of state-owned companies, and reducing the power and influence of trade unions.
 `),
-new Person('andrzej-szczeklik' , urls.szczeklik, `Andrzej Szczeklik was a Polish immunologist working Jagiellonian University School of Medicine in Kraków.
+new Person('Andrzej Szczeklik' , urls.szczeklik, `Andrzej Szczeklik was a Polish immunologist working Jagiellonian University School of Medicine in Kraków.
 In 1979 he became chairman of Department of Medicine, Jagiellonian University School of Medicine in Kraków.
 In 1990-1993 he was elected the Rector (President) of the Copernicus Academy of Medicine in Cracow, and then Vice-Rector of the Jagiellonian University for Medical Affairs (1993–1996).
 Szczeklik's main research interest included: cardiopulmonarydiseases, aspirin-induced asthma, chemical mediators in diseases ofcirculatory and respiratory systems with special reference toeicosanoids.
 Szczeklik has been lecturing extensively in major European, American and Japanese universities.
 `),
-new Person('witold-kiezun' , urls.kiezun, `Witold Kieżun  is a Polish economist, former soldier of the Home Army – the Polish resistance movement against German occupation during World War II, participant of the Warsaw uprising and prisoner in the Soviet Gulags.
+new Person('Witold Kieżun' , urls.kiezun, `Witold Kieżun  is a Polish economist, former soldier of the Home Army – the Polish resistance movement against German occupation during World War II, participant of the Warsaw uprising and prisoner in the Soviet Gulags.
 Witold Kieżun is currently a lecturer at Kozminski University in Warsaw. He received Doctor Honoris Causa from Jagiellonian University and the National Defence University of Warsaw. 
 Kieżun is an honorary member of the Polish Academy of Sciences and an honorary citizen of Warsaw.
 Currently, 94-year-old Witold Kieżun continues writing articles and delivering lectures to various audiences, and he is also working on a new book on the Polish transformation.

@@ -6,7 +6,7 @@ import { authoritiesMap, Person } from './details';
 @Component({
   selector: 'app-authorities-detail',
   templateUrl: './authorities-detail.component.html',
-  styleUrls: ['./authorities-detail.component.css']
+  styleUrls: ['./authorities-detail.component.scss']
 })
 export class AuthoritiesDetailComponent implements OnInit {
 

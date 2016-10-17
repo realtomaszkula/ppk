@@ -1,0 +1,35 @@
+
+:host {
+  display: flex;
+  padding: 2em;
+  font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 650px) {
+  :host {
+  flex-direction: column;
+  section {
+    column-count: 1;
+  }
+  figure {
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (min-width: 666px) and (max-width: 950px) {
+  :host {
+    flex-direction: column;
+    section {
+      column-count: 2;
+      h2 {
+        column-span: all;
+      }
+    }
+    figure {
+      align-self: center;
+    }
+  }
+}
+
