@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthoritiesComponent } from './authorities.component';
+import { AuthoritiesComponent } from './authorities/authorities.component';
 import { AuthoritiesDetailComponent } from './authorities-detail/authorities-detail.component';
 import { authoritiesRouting } from './authorities.routing';
 

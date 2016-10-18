@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'career', component: CareerComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'authorities', loadChildren: 'app/authorities/authorities.module#AuthoritiesModule' },
 ]
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
