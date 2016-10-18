@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ArticlesComponent } from './articles.component';
 
 import { articlesRouting }from './articles.routing';
+import { ArticleListComponent } from './article-list/article-list.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 
 @NgModule({
@@ -10,6 +11,6 @@ import { articlesRouting }from './articles.routing';
     CommonModule,
     articlesRouting
   ],
-  declarations: [ArticlesComponent]
+  declarations: [ ArticleListComponent, ArticleDetailComponent]
 })
 export class ArticlesModule { }
