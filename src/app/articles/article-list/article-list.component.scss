@@ -1,0 +1,21 @@
+@import '../../../global';
+
+
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+
+  section {
+    margin-top: 2em;
+    padding: 1em;
+    flex: 1 0 calc(50% - 2em);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }

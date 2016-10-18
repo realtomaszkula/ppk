@@ -1,3 +1,15 @@
-<p>
-  article-list works!
-</p>
+
+
+<main>
+
+	<section *ngFor="let summary of articlesSummaries" class="card">
+		<h1>{{summary.name}}</h1>
+		<i class="material-icons">{{summary.icon}}</i>
+		<p>{{summary.excerpt}}</p>
+		<a class="btn" (click)="navigateTo(summary.id)">Read more</a>
+	</section>
+
+</main>
+
+
+  
