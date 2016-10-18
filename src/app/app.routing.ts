@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'career', component: CareerComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'authorities', loadChildren: 'app/authorities/authorities.module#AuthoritiesModule' },
+  { path: 'articles', loadChildren: 'app/articles/articles.module#ArticlesModule' },
 ]
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
