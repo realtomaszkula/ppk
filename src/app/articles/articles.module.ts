@@ -12,6 +12,7 @@ import { InstructionsComponent } from './shared/instructions/instructions.compon
 import { ResultTableComponent } from './shared/result-table/result-table.component';
 import { RadioQuestionsComponent } from './shared/radio-questions/radio-questions.component';
 import { MentalToughnessComponent } from './mental-toughness/mental-toughness.component';
+import { RadioTestComponent } from './shared/radio-test/radio-test.component';
 
 
 @NgModule({
@@ -21,6 +22,6 @@ import { MentalToughnessComponent } from './mental-toughness/mental-toughness.co
     CommonModule,
     articlesRouting
   ],
-  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent]
+  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent, RadioTestComponent]
 })
 export class ArticlesModule { }

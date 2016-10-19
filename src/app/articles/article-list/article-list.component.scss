@@ -2,21 +2,20 @@
 
 
 
-  section {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-  }
+section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
 
 
-  article {
-    margin-top: 2em;
-    padding: 1em;
-    flex: 1 0 calc(50% - 2em);
-    text-align: center;
+article {
+  margin-top: 2em;
+  padding: 1em;
+  flex: 1 0 calc(50% - 2em);
+  text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

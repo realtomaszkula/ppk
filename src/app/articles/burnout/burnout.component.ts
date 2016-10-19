@@ -5,12 +5,18 @@ import { Question, ResultScale} from '../interfaces';
 
 @Component({
   selector: 'app-burnout',
-  templateUrl: './burnout.component.html',
+  template: `
+    <app-radio-test [title]="title"
+      [optionsForRadio]="optionsForRadio"
+      [resultScale]="resultScale"
+      [instructions]="instructions"
+      [questions]="questions"
+    ></app-radio-test>
+  `,
   styleUrls: ['./burnout.component.scss']
 })
 export class BurnoutComponent  {
 
-  result: number;
   title = 'Burnout';
   optionsForRadio = [1,2,3,4,5];
 

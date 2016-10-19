@@ -4,12 +4,21 @@ import { Question, ResultScale} from '../interfaces';
 
 @Component({
   selector: 'app-mental-toughness',
-  templateUrl: './mental-toughness.component.html',
+  template: `
+    <app-radio-test [title]="title"
+      [optionsForRadio]="optionsForRadio"
+      [resultScale]="resultScale"
+      [instructions]="instructions"
+      [questions]="questions"
+    ></app-radio-test>
+  `,
   styleUrls: ['./mental-toughness.component.scss']
 })
 export class MentalToughnessComponent {
 
   constructor() { }
+
+  title = 'Mental Toughness';
 
   instructions: string[] = [
     'Nulla in pariatur et deserunt non magna nulla mollit est qui eu.',
