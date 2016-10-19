@@ -1,14 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { NgForm } from '@angular/forms';
-class Question {
-  value: number = null;
-  constructor(public content: string) {}
-}
-
-class ResultScale {
-  constructor(public range: {from: number, to: number}, public explanation: string) {}
-}
+import { Question, ResultScale} from '../interfaces';
 
 @Component({
   selector: 'app-burnout',
@@ -16,8 +9,11 @@ class ResultScale {
   styleUrls: ['./burnout.component.scss']
 })
 export class BurnoutComponent  {
-
+  
+  result: number;
+  title = 'Burnout';
   active = true;
+  optionsForRadio = [1,2,3,4,5];
 
   instructions: string[] = [
     'Przeanalizuj starannie dziesięć ostanich miesięcy. Czy zauważyłeś jakieś zmiany u siebie czy w swoim otoczeniu?',
@@ -34,7 +30,6 @@ export class BurnoutComponent  {
     new ResultScale({ from: 66, to: Number.POSITIVE_INFINITY }, "Osągnąłeś punkt krytyczny: Twoje zdrowie psychiczne i fizyczne jest zagrożone!"),
   ]
 
-  result: number;
 
   questions: Question[] = [
     new Question('Łatwiej się męczysz? Jesteś wyczerpany, bez energii?'),
@@ -56,12 +51,5 @@ export class BurnoutComponent  {
 
   constructor() {}
 
-  onSubmit(f: NgForm) {
-    this.result = this.questions.reduce((acc: number, q: Question) => q.value + acc, 0)
-  }
 
-  reset() {
-    this.active = false;
-    setTimeout(() => this.active = true, 0);
-  }
 }

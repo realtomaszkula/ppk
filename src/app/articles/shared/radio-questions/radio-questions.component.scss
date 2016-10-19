@@ -1,0 +1,15 @@
+@import '../../../../global';
+
+fieldset {
+  margin: 1em 0;
+  border-left: 3px solid $primary-color;
+}
+
+fieldset.ng-invalid {
+  border-left: 3px solid $invalid-color;
+}
+
+button:disabled, button:disabled:hover {
+  cursor: not-allowed;
+  background-color: silver;
+}

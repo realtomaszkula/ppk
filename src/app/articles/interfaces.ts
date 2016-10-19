@@ -11,3 +11,12 @@ export interface Article {
   summary: ArticleSummary,
   content: string;
 }
+
+export class Question {
+  value: number = null;
+  constructor(public content: string) {}
+}
+
+export class ResultScale {
+  constructor(public range: {from: number, to: number}, public explanation: string) {}
+}

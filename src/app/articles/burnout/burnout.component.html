@@ -1,47 +1,14 @@
+	<h1>{{title}}</h1>
 <main>
 
-	<h2>
-		Instructions</h2>
-	<ol>
-		<li *ngFor="let instruction of instructions">{{instruction}}</li>
-	</ol>
+	<app-instructions [instructions]="instructions"></app-instructions>
 
-	<h2>Questions</h2>
-	<form #f="ngForm" (ngSubmit)="onSubmit(f)" *ngIf="active" novalidate>
-		<!-- ng model group is used to style the border around fieldset-->
-		<fieldset *ngFor="let q of questions; let index = index" required ngModelGroup="{{index}}">
-
-			<legend>
-				{{q.content}}
-			</legend>
-
-			<input type="radio" *ngFor="let i of [1,2,3,4,5]" [(ngModel)]="q.value" [name]="q.content" [value]="i" required>
-		</fieldset>
-
-		<div class="submit-buttons">
-			<button class="btn" [disabled]="!f.control.valid">Submit</button>
-			<button class="btn" (click)="reset()">Reset	</button>
-		</div>
-
-	</form>
+	<app-radio-questions [optionsForRadio]="optionsForRadio" 
+												[questions]="questions"
+												(result)="result = $event"
+												>
+	</app-radio-questions>
 </main>
 
-<section *ngIf="result">
-	<h2>Result</h2>
 
-	<h4>You scored: {{result}}!</h4>
-
-	<table>
-		<tr>
-			<th>From</th>
-			<th>To</th>
-			<th>Explanation</th>
-		</tr>
-		<tr *ngFor="let scale of resultScale" [class.result]="result >= scale.range.from && result <= scale.range.to">
-			<td>{{ scale.range.from }}</td>
-			<td>{{ scale.range.to }}</td>
-			<td>{{ scale.explanation }}</td>
-		</tr>
-	</table>
-
-</section>
+<app-result-table [resultScale]="resultScale" [result]="result" ></app-result-table>

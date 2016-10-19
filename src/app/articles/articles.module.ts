@@ -8,6 +8,9 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { ArticlesService } from './articles.service';
 import { BurnoutComponent } from './burnout/burnout.component';
+import { InstructionsComponent } from './shared/instructions/instructions.component';
+import { ResultTableComponent } from './shared/result-table/result-table.component';
+import { RadioQuestionsComponent } from './shared/radio-questions/radio-questions.component';
 
 
 @NgModule({
@@ -17,6 +20,6 @@ import { BurnoutComponent } from './burnout/burnout.component';
     CommonModule,
     articlesRouting
   ],
-  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent]
+  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent]
 })
 export class ArticlesModule { }
