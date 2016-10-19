@@ -13,6 +13,8 @@ import { ResultTableComponent } from './shared/result-table/result-table.compone
 import { RadioQuestionsComponent } from './shared/radio-questions/radio-questions.component';
 import { MentalToughnessComponent } from './mental-toughness/mental-toughness.component';
 import { RadioTestComponent } from './shared/radio-test/radio-test.component';
+import { GradientResultComponent } from './shared/gradient-result/gradient-result.component';
+import { SensationSeekingComponent } from './sensation-seeking/sensation-seeking.component';
 
 
 @NgModule({
@@ -22,6 +24,6 @@ import { RadioTestComponent } from './shared/radio-test/radio-test.component';
     CommonModule,
     articlesRouting
   ],
-  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent, RadioTestComponent]
+  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent, RadioTestComponent, GradientResultComponent, SensationSeekingComponent]
 })
 export class ArticlesModule { }
