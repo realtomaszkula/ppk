@@ -2,11 +2,24 @@
 
 <main>
 
-	<section *ngFor="let summary of articlesSummaries | async" class="card">
-		<h1>{{summary.name}}</h1>
-		<i class="material-icons">{{summary.icon}}</i>
-		<p>{{summary.excerpt}}</p>
-		<a class="btn" (click)="navigateTo(summary.id)">Read more</a>
+	<h2>Stress</h2>
+	<section>
+		<article class="card">
+			<h1>Burnout</h1>
+			<i class="material-icons">home</i>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quasi sequi praesentium consequatur vero dolorem, officia tenetur error itaque adipisci.</p>
+			<a class="btn" routerLink="{{'stress/burnout'}}">Read more</a>
+		</article>
+	</section>
+
+	<h2>Other Articles</h2>
+	<section>
+		<article *ngFor="let summary of articlesSummaries | async" class="card">
+			<h1>{{summary.name}}</h1>
+			<i class="material-icons">{{summary.icon}}</i>
+			<p>{{summary.excerpt}}</p>
+			<a class="btn" (click)="navigateTo(summary.id)">Read more</a>
+		</article>
 	</section>
 
 </main>

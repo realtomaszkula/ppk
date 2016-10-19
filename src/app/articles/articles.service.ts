@@ -23,8 +23,6 @@ const mockArticles: Article[] = [
   { id: 5, summary: mockSummaries[4], content: 'Voluptate quis exercitation amet duis. Sunt labore tempor culpa ex veniam anim in minim minim dolore ullamco fugiat id esse. Enim fugiat anim ex laborum magna laborum consequat est esse fugiat. Amet pariatur cupidatat consequat ad anim do ullamco sunt velit nisi sint mollit exercitation.'},
 ];
 
-
-
 @Injectable()
 export class ArticlesService {
 

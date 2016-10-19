@@ -1,0 +1,34 @@
+@import '../../../global';
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  margin: 1em 0;
+}
+
+fieldset.ng-invalid {
+  border: 1px solid $primary-color;
+}
+
+button:disabled, button:disabled:hover {
+  cursor: not-allowed;
+  background-color: silver;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.result {
+  background-color: $primary-color;
+  color: white;
+}

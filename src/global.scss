@@ -23,6 +23,15 @@ $main-background-color: #fafafa;
 
 }
 
+.submit-buttons {
+  margin-top: 2em;
+}
+
+.btn-disabled {
+  cursor: not-allowed;
+  background: silver;
+}
+
 a {
   text-decoration: none;
 }
