@@ -12,7 +12,6 @@ export class BurnoutComponent  {
 
   result: number;
   title = 'Burnout';
-  active = true;
   optionsForRadio = [1,2,3,4,5];
 
   instructions: string[] = [

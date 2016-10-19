@@ -1,3 +1,14 @@
-<p>
-  mental-toughness works!
-</p>
+<h1>{{title}}</h1>
+<main>
+
+	<app-instructions [instructions]="instructions"></app-instructions>
+
+	<app-radio-questions [optionsForRadio]="optionsForRadio" 
+												[questions]="questions"
+												(result)="result = $event"
+												>
+	</app-radio-questions>
+</main>
+
+
+<app-result-table [resultScale]="resultScale" [result]="result" ></app-result-table>
