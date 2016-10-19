@@ -1,4 +1,6 @@
 $primary-color: #3f51b5;
+$invalid-color: #d80d28;
+
 $lighter-primary: lighten($primary-color, 40%);
 $darker-primary: darken($primary-color, 5%);
 $nav-color: slategray;
