@@ -2,7 +2,7 @@
 
 <main>
 
-	<section *ngFor="let summary of articlesSummaries" class="card">
+	<section *ngFor="let summary of articlesSummaries | async" class="card">
 		<h1>{{summary.name}}</h1>
 		<i class="material-icons">{{summary.icon}}</i>
 		<p>{{summary.excerpt}}</p>
