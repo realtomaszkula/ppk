@@ -11,6 +11,7 @@ import { BurnoutComponent } from './burnout/burnout.component';
 import { InstructionsComponent } from './shared/instructions/instructions.component';
 import { ResultTableComponent } from './shared/result-table/result-table.component';
 import { RadioQuestionsComponent } from './shared/radio-questions/radio-questions.component';
+import { MentalToughnessComponent } from './mental-toughness/mental-toughness.component';
 
 
 @NgModule({
@@ -20,6 +21,6 @@ import { RadioQuestionsComponent } from './shared/radio-questions/radio-question
     CommonModule,
     articlesRouting
   ],
-  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent]
+  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent]
 })
 export class ArticlesModule { }

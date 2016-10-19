@@ -9,7 +9,7 @@ import { Question, ResultScale} from '../interfaces';
   styleUrls: ['./burnout.component.scss']
 })
 export class BurnoutComponent  {
-  
+
   result: number;
   title = 'Burnout';
   active = true;
@@ -30,7 +30,6 @@ export class BurnoutComponent  {
     new ResultScale({ from: 66, to: Number.POSITIVE_INFINITY }, "Osągnąłeś punkt krytyczny: Twoje zdrowie psychiczne i fizyczne jest zagrożone!"),
   ]
 
-
   questions: Question[] = [
     new Question('Łatwiej się męczysz? Jesteś wyczerpany, bez energii?'),
     new Question('Irytują Cię ci, którzy mówią: "Nie wyglądasz najlepiej od jakiegoś czasu"?'),
@@ -39,14 +38,14 @@ export class BurnoutComponent  {
     new Question('Odczuwasz często melancholię lub przygnębienie, których nie potrafisz wyjaśnić?'),
     new Question('Zapominasz czasem o spotkaniach, rachunkach, sprawach osobitych?'),
     new Question('Jesteś bardziej poirytowany i reagujesz w sposób wybuchowy wobec swojego otoczenia?'),
-    // new Question('Coraz rzadziej widujesz się z rodziną i serdecznymi przyjaciółmi?'),
-    // new Question('Jesteś zbyt zajęty, aby regularnie zajmować się np. czytaniem sprawozdań, odpowiadaniem na telefony czy wysyłaniem kartek z życzeniami?'),
-    // new Question('Cierpisz na dolegiwości fizyczne(boleści, ból głowy, uporczywy katar)?'),
-    // new Question('Czujesz się zagubiony lub przegrany, kiedy kończy się dzień pracy?'),
-    // new Question('Masz wrażenie, że opuściły Cię nastroje, takie jka wesołość czy radość?'),
-    // new Question('Jesteś niezdolny do zaakceptowania kawałów lub dowcipów na swój temat?'),
-    // new Question('Aktywność seksualna wydaje Ci się raczej szkodliwym wysiłkiem niż źródłem przyjemności?'),
-    // new Question('Odkrywasz, że nie masz nic do powiedzenia innym ludziom?'),
+    new Question('Coraz rzadziej widujesz się z rodziną i serdecznymi przyjaciółmi?'),
+    new Question('Jesteś zbyt zajęty, aby regularnie zajmować się np. czytaniem sprawozdań, odpowiadaniem na telefony czy wysyłaniem kartek z życzeniami?'),
+    new Question('Cierpisz na dolegiwości fizyczne(boleści, ból głowy, uporczywy katar)?'),
+    new Question('Czujesz się zagubiony lub przegrany, kiedy kończy się dzień pracy?'),
+    new Question('Masz wrażenie, że opuściły Cię nastroje, takie jka wesołość czy radość?'),
+    new Question('Jesteś niezdolny do zaakceptowania kawałów lub dowcipów na swój temat?'),
+    new Question('Aktywność seksualna wydaje Ci się raczej szkodliwym wysiłkiem niż źródłem przyjemności?'),
+    new Question('Odkrywasz, że nie masz nic do powiedzenia innym ludziom?'),
   ]
 
   constructor() {}
