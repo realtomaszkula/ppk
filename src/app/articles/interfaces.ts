@@ -12,6 +12,10 @@ export interface Article {
   content: string;
 }
 
+export class OptionsForRadio {
+  constructor(public options: {machine: number, human?: string}[]){}
+}
+
 export class Question {
   constructor(public content: string, public value: number = null) {}
 }

@@ -8,11 +8,10 @@
 				<p>
 					{{q.content}}
 				</p>
-				
 				<section class="radio-buttons">
-					<div class="radio-wrapper" *ngFor="let i of optionsForRadio">
-						<input type="radio"  [(ngModel)]="q.value" [name]="q.content"  id="{{q.content + i}}" [value]="i" required>
-						<label [attr.for]="q.content + i" >{{i}}</label>
+					<div class="radio-wrapper" *ngFor="let opts of optionsForRadio.options">
+						<input type="radio"  [(ngModel)]="q.value" [name]="q.content"  id="{{q.content + opts.machine}}" [value]="opts.machine" required>
+						<label [attr.for]="q.content + opts.machine" >{{opts.human ? opts.human : opts.machine}}</label>
 
 					</div>
 				</section>

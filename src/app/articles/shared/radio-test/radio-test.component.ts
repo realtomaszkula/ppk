@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
-import { Question, ResultScale } from '../../interfaces';
+import { Question, ResultScale, OptionsForRadio } from '../../interfaces';
 
 @Component({
   selector: 'app-radio-test',
@@ -15,7 +15,7 @@ export class RadioTestComponent implements OnInit {
   @Input() title: string;
   @Input() instructions: string[];
   @Input() questions: Question[];
-  @Input() optionsForRadio: any[];
+  @Input() optionsForRadio: OptionsForRadio[];
   @Input() result: number;
   @Input() resultScale: ResultScale;
 

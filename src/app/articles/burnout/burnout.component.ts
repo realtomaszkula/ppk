@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { NgForm } from '@angular/forms';
-import { Question, ResultScale} from '../interfaces';
+import { Question, ResultScale, OptionsForRadio} from '../interfaces';
 
 @Component({
   selector: 'app-burnout',
@@ -18,7 +18,13 @@ import { Question, ResultScale} from '../interfaces';
 export class BurnoutComponent  {
 
   title = 'Burnout';
-  optionsForRadio = [1,2,3,4,5];
+  optionsForRadio: OptionsForRadio = new OptionsForRadio([
+    { machine: 0 },
+    { machine: 1 },
+    { machine: 2 },
+    { machine: 3 },
+    { machine: 4 },
+  ])
 
   instructions: string[] = [
     'Przeanalizuj starannie dziesięć ostanich miesięcy. Czy zauważyłeś jakieś zmiany u siebie czy w swoim otoczeniu?',

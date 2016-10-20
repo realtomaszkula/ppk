@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Question, ResultScale} from '../interfaces';
+import { Question, ResultScale, OptionsForRadio} from '../interfaces';
 
 @Component({
   selector: 'app-mental-toughness',
@@ -26,7 +26,10 @@ export class MentalToughnessComponent {
     'Ea amet proident sunt fugiat laboris amet excepteur commodo adipisicing Lorem ipsum exercitation dolore id.'
   ]
 
-  optionsForRadio = [0, 1];
+  optionsForRadio: OptionsForRadio = new OptionsForRadio([
+    { machine: 0, human: 'TAK'},
+    { machine: 1, human: 'NIE'}
+  ])
 
   resultScale: ResultScale[] = [
     new ResultScale({ from: 0, to: 8 }, 'Wewnatrzstresowa osoba'),

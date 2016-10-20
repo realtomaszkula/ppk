@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Question, ResultScale} from '../interfaces';
+import { Question, ResultScale, OptionsForRadio} from '../interfaces';
 
 @Component({
   selector: 'app-peronality-types',
@@ -26,7 +26,11 @@ export class PeronalityTypesComponent implements OnInit {
     'Aliquip officia enim Lorem culpa officia nulla. Exercitation aliquip consectetur reprehenderit ipsum occaecat dolore ad enim nisi. Ad velit enim laboris anim exercitation adipisicing do tempor. Nisi officia dolore reprehenderit consequat enim officia irure veniam quis occaecat irure irure deserunt sit. In consequat nulla ullamco excepteur tempor consectetur adipisicing exercitation dolor dolor fugiat cupidatat enim eiusmod. Aute amet amet in pariatur voluptate excepteur mollit sunt. Quis reprehenderit enim commodo fugiat laboris id.'
   ]
 
-  optionsForRadio = [0, 1];
+  optionsForRadio: OptionsForRadio = new OptionsForRadio([
+    { machine: 0, human: 'TAK'},
+    { machine: 1, human: 'NIE'}
+  ])
+
 
   questions: Question[] = [
     new Question('Czy w codziennej rozmowie dobitnie akcentujesz ważne słowa?'),

@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { Question } from '../../interfaces';
+import { Question, OptionsForRadio } from '../../interfaces';
 
 @Component({
   selector: 'app-radio-questions',
@@ -15,7 +15,7 @@ export class RadioQuestionsComponent {
   private active: boolean = true;
 
   @Input() questions: Question[];
-  @Input() optionsForRadio: any[];
+  @Input() optionsForRadio: OptionsForRadio[];
   @Output() result = new EventEmitter<number>();
 
   constructor() { }
