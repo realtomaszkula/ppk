@@ -8,6 +8,7 @@ import { MentalToughnessComponent } from './mental-toughness/mental-toughness.co
 import { SensationSeekingComponent } from './sensation-seeking/sensation-seeking.component';
 import { PeronalityTypesComponent } from './peronality-types/peronality-types.component';
 import { StressScaleComponent } from './stress-scale/stress-scale.component';
+
 const routes: Routes = [
   { path: '', component: ArticleListComponent },
   { path: ':id', component: ArticleDetailComponent },

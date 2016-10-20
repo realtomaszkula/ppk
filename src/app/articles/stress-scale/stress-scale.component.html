@@ -1,1 +1,9 @@
 <h1>{{ title }}</h1>
+
+<app-instructions [instructions]="instructions"></app-instructions>
+
+
+<app-number-questions [min]="0" max="100" [questions]="questions" (result)="result = $event"></app-number-questions>
+
+
+<app-result-table [result]="result" [resultScale]="resultScale"></app-result-table>

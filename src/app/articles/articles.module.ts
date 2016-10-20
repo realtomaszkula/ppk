@@ -19,6 +19,7 @@ import { QuestionPairsComponent } from './shared/question-pairs/question-pairs.c
 import { LineBreakComponent } from './shared/line-break/line-break.component';
 import { PeronalityTypesComponent } from './peronality-types/peronality-types.component';
 import { StressScaleComponent } from './stress-scale/stress-scale.component';
+import { NumberQuestionsComponent } from './shared/number-questions/number-questions.component';
 
 
 @NgModule({
@@ -28,6 +29,6 @@ import { StressScaleComponent } from './stress-scale/stress-scale.component';
     CommonModule,
     articlesRouting
   ],
-  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent, RadioTestComponent, GradientResultComponent, SensationSeekingComponent, QuestionPairsComponent, LineBreakComponent, PeronalityTypesComponent, StressScaleComponent]
+  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent, RadioTestComponent, GradientResultComponent, SensationSeekingComponent, QuestionPairsComponent, LineBreakComponent, PeronalityTypesComponent, StressScaleComponent, NumberQuestionsComponent]
 })
 export class ArticlesModule { }

@@ -16,6 +16,12 @@ export class Question {
   constructor(public content: string, public value: number = null) {}
 }
 
+export class QuestionWithWeight extends Question {
+  constructor(public content: string, public weight: number, public value: number = 0) {
+    super(content, value);
+  }
+}
+
 export class ResultScale {
   constructor(public range: {from: number, to: number}, public explanation: string) {}
 }
