@@ -3,7 +3,6 @@
 $slider-height: 3em;
 
 section {
-  width: 100%;
   position: relative;
   background: linear-gradient(to right, #ffffff 0%, $primary-color 51%, darken($primary-color, 20%) 100%);
   margin: ($slider-height / 2 + 2em) 0;
@@ -16,3 +15,4 @@ section {
   height: $slider-height * 2;
   border-left: 2px solid lightcoral;
 }
+

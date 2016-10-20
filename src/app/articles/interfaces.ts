@@ -13,10 +13,10 @@ export interface Article {
 }
 
 export class Question {
-  value: number = null;
-  constructor(public content: string) {}
+  constructor(public content: string, public value: number = null) {}
 }
 
 export class ResultScale {
   constructor(public range: {from: number, to: number}, public explanation: string) {}
 }
+

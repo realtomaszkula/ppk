@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 
     <h2>Result</h2>
 
-    <h4>You scored: {{ result }}</h4>
+    <h4>You scored: {{ result }}%</h4>
     <p>{{ resultExplanation }} </p>
     <section>
       <div class="line" [style.left]="left"></div>
