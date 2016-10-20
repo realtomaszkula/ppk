@@ -1,16 +1,22 @@
 	<h2>Questions</h2>
 	<form #f="ngForm" (ngSubmit)="onSubmit(f)" *ngIf="active" novalidate>
 		<!-- ng model group is used to style the border around fieldset-->
+		
 		<div *ngFor="let q of questions; let index = index">
-			<fieldset  >
+			<section class="question" >
 
-				<legend>
+				<p>
 					{{q.content}}
-				</legend>
+				</p>
+				
+				<section class="radio-buttons">
+					<div class="radio-wrapper" *ngFor="let i of optionsForRadio">
+						<input type="radio"  [(ngModel)]="q.value" [name]="q.content"  id="{{q.content + i}}" [value]="i" required>
+						<label [attr.for]="q.content + i" >{{i}}</label>
 
-				<input type="radio" *ngFor="let i of optionsForRadio" [(ngModel)]="q.value" [name]="q.content" [value]="i" required>
-
-			</fieldset>
+					</div>
+				</section>
+			</section>
 
 			<app-line-break [index]="index" [length]="questions.length"	></app-line-break>
 
