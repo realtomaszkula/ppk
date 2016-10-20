@@ -1,6 +1,6 @@
 <main>
 
-	<h2>Stress</h2>
+	<h2 class="toolbar">Stress</h2>
 	<section>
 
 		<!-- refactor to use ngFor later-->
@@ -41,7 +41,7 @@
 
 	</section>
 
-	<h2>Other Articles</h2>
+	<h2 class="toolbar">Other Articles</h2>
 	<section>
 		<article *ngFor="let summary of articlesSummaries | async" class="card">
 			<h1>{{summary.name}}</h1>

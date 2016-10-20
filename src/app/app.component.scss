@@ -38,6 +38,12 @@ main {
   padding: 2em;
 }
 
+@media screen and (min-width: 600px) {
+  main {
+      min-width: 60%;
+  }
+}
+
 
 // header
 header {
