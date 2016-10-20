@@ -6,16 +6,17 @@
   </figure>
 
   <section>
-
-      <app-slider [open]="form.openOrClose">
+    <!-- email -->
+    <app-slider [open]="form.openOrClose">
         <div class="header">
           Email
         </div>
         <div class="content">
-          <i class="material-icons">mail</i>
+          <i class="material-icons icon-button">mail</i>
         </div>
     </app-slider>
 
+    <!-- adress and phone-->
     <app-slider *ngFor="let item of sliderItems" [open]="item.openOrClose">
       <div class="header">
         {{item.title}}
@@ -25,6 +26,18 @@
           {{line}}
         </p>
       </div>
+    </app-slider>
+
+    <!-- social media -->
+    <app-slider [open]="form.openOrClose">
+        <div class="header">
+          Social Media
+        </div>
+        <div class="content">
+          <i class="material-icons icon-button">mail</i>
+          <i class="material-icons icon-button">home</i>
+          <i class="material-icons icon-button">person</i>
+        </div>
     </app-slider>
 
 

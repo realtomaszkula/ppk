@@ -19,9 +19,8 @@ export class ContactComponent {
       "22 341",
       "33 Ljungby Sweden"
     ]);
-  private socialMedia = new SliderWrapper('SocialMedia', ['Twitter', 'Facebook', 'LinkedIn']);
 
-  sliderItems: SliderWrapper[] = [this.telephone, this.adress, this.socialMedia];
+  sliderItems: SliderWrapper[] = [this.telephone, this.adress];
 
   constructor() { }
 
