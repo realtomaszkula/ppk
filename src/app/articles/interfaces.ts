@@ -12,8 +12,27 @@ export interface Article {
   content: string;
 }
 
+type radioOptions  = { machine: number, human?: string };
+
 export class OptionsForRadio {
-  constructor(public options: {machine: number, human?: string}[]){}
+  private _options: radioOptions[];
+
+  constructor(options: radioOptions[]){
+    this.options = options;
+  }
+
+  get options() {
+    return this._options;
+  }
+
+  set options(options: radioOptions[]) {
+    this._options = options.map(opts => { 
+      if (!opts.human) {
+        opts.human = '' + opts.machine;
+      }
+      return opts;
+     })
+  }
 }
 
 export class Question {

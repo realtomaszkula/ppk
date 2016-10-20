@@ -8,10 +8,12 @@
 				<p>
 					{{q.content}}
 				</p>
+
+				{{ optionsForRadio | json }}
 				<section class="radio-buttons">
 					<div class="radio-wrapper" *ngFor="let opts of optionsForRadio.options">
 						<input type="radio"  [(ngModel)]="q.value" [name]="q.content"  id="{{q.content + opts.machine}}" [value]="opts.machine" required>
-						<label [attr.for]="q.content + opts.machine" >{{opts.human ? opts.human : opts.machine}}</label>
+						<label [attr.for]="q.content + opts.machine" >{{opts.human}}</label>
 
 					</div>
 				</section>

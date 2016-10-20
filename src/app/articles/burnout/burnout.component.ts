@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { NgForm } from '@angular/forms';
-import { Question, ResultScale, OptionsForRadio} from '../interfaces';
+import { Question, ResultScale, OptionsForRadio } from '../interfaces';
 
 @Component({
   selector: 'app-burnout',
@@ -19,11 +19,11 @@ export class BurnoutComponent  {
 
   title = 'Burnout';
   optionsForRadio: OptionsForRadio = new OptionsForRadio([
-    { machine: 0 },
     { machine: 1 },
     { machine: 2 },
     { machine: 3 },
     { machine: 4 },
+    { machine: 5 },
   ])
 
   instructions: string[] = [
