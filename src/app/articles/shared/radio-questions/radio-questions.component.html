@@ -1,17 +1,26 @@
 	<h2>Questions</h2>
 	<form #f="ngForm" (ngSubmit)="onSubmit(f)" *ngIf="active" novalidate>
 		<!-- ng model group is used to style the border around fieldset-->
-		<fieldset *ngFor="let q of questions; let index = index" required ngModelGroup="{{index}}">
+		<div *ngFor="let q of questions; let index = index">
+			<fieldset  >
 
-			<legend>
-				{{q.content}}
-			</legend>
+				<legend>
+					{{q.content}}
+				</legend>
 
-			<input type="radio" *ngFor="let i of optionsForRadio" [(ngModel)]="q.value" [name]="q.content" [value]="i" required>
-		</fieldset>
+				<input type="radio" *ngFor="let i of optionsForRadio" [(ngModel)]="q.value" [name]="q.content" [value]="i" required>
+
+			</fieldset>
+
+			<app-line-break 
+						[show]="questions.length > 15 && index > 0 && index !== questions.length - 1 && (index + 1) % 10 === 0 && index > 1"
+						text="{{questions.length - 1 - index}} questions left"	></app-line-break>
+
+
+		</div >
 
 		<div class="submit-buttons">
-			<button class="btn" [disabled]="!f.control.valid">Submit</button>
+			<button class="btn" [disabled]="!f.control.valid || f.untouched">Submit</button>
 			<button class="btn" (click)="reset()">Reset	</button>
 		</div>
 

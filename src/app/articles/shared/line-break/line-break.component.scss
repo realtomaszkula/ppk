@@ -1,0 +1,16 @@
+@import '../../../../global';
+
+
+section {
+  display: flex;
+  margin: 4em 0;
+}
+
+hr {
+  border-color: $primary-color;
+  flex: 1 auto;
+}
+
+span {
+  margin: 0 2em;
+}

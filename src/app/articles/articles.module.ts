@@ -16,6 +16,7 @@ import { RadioTestComponent } from './shared/radio-test/radio-test.component';
 import { GradientResultComponent } from './shared/gradient-result/gradient-result.component';
 import { SensationSeekingComponent } from './sensation-seeking/sensation-seeking.component';
 import { QuestionPairsComponent } from './shared/question-pairs/question-pairs.component';
+import { LineBreakComponent } from './shared/line-break/line-break.component';
 
 
 @NgModule({
@@ -25,6 +26,6 @@ import { QuestionPairsComponent } from './shared/question-pairs/question-pairs.c
     CommonModule,
     articlesRouting
   ],
-  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent, RadioTestComponent, GradientResultComponent, SensationSeekingComponent, QuestionPairsComponent]
+  declarations: [ ArticleListComponent, ArticleDetailComponent, BurnoutComponent, InstructionsComponent, ResultTableComponent, RadioQuestionsComponent, MentalToughnessComponent, RadioTestComponent, GradientResultComponent, SensationSeekingComponent, QuestionPairsComponent, LineBreakComponent]
 })
 export class ArticlesModule { }
