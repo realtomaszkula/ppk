@@ -16,10 +16,10 @@
 <div class="tabs-wrapper">
 	<section *ngFor="let tab of tabs" class="card">
 		<h1>{{tab.title}}</h1>
-		<span>
+		<a routerLink="{{tab.url}}">
 			<i class="material-icons icon-button">{{tab.icon}}</i>
-		</span>
+		</a >
 		<p>{{tab.content}}</p>
-		<button class="btn">Visit</button>
+		<a class="btn" routerLink="{{tab.url}}">Visit</a>
 	</section>
 </div>
