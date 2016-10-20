@@ -10,6 +10,9 @@ import { CareerComponent } from './career/career.component';
 import { ContactComponent } from './contact/contact.component';
 import { SliderComponent } from './slider/slider.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { firebaseConfig } from '../firebase.config';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +22,7 @@ import { SliderComponent } from './slider/slider.component';
     SliderComponent,
   ],
   imports: [
+    AngularFireModule.initializeApp(firebaseConfig),
     BrowserModule,
     FormsModule,
     HttpModule,
