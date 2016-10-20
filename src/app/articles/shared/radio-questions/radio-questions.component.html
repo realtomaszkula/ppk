@@ -24,8 +24,7 @@
 		</div >
 
 		<div class="submit-buttons">
-			<button class="btn" [disabled]="!f.control.valid || f.untouched">Submit</button>
+			<button class="btn" [disabled]="!f.control.valid || !f.dirty">Submit</button>
 			<button class="btn" (click)="reset()">Reset	</button>
 		</div>
-
 	</form>
