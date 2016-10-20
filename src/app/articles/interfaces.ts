@@ -45,6 +45,12 @@ export class QuestionWithWeight extends Question {
   }
 }
 
+export class QuestionWithModifier extends Question {
+  constructor(public content: string, public modifier: boolean = false, public value: number = null) {
+    super(content, value);
+  }
+}
+
 export class ResultScale {
   constructor(public range: {from: number, to: number}, public explanation: string) {}
 }
