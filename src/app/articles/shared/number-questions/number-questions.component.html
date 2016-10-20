@@ -11,9 +11,8 @@
 
 			</fieldset>
 
-			<app-line-break 
-						[show]="questions.length > 15 && index > 0 && index !== questions.length - 1 && (index + 1) % 10 === 0 && index > 1"
-						text="{{questions.length - 1 - index}} questions left"	></app-line-break>
+			<app-line-break [index]="index" [length]="questions.length"	></app-line-break>
+
 		</div >
 
 		<div class="submit-buttons">
