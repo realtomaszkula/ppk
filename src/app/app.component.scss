@@ -99,6 +99,7 @@ nav {
   }
 
   .nav-active {
+    border-left: 0px;
     border-bottom: 3px solid $primary-color;
     background: lighten($primary-color, 50%);
   }
@@ -106,6 +107,13 @@ nav {
 }
 
 
+@media screen and (max-width: 438px) {
+  .nav-active {
+    border-left: 3px solid $primary-color;
+    background: lighten($primary-color, 50%);
+  }
+
+}
 
 
 @media screen and (max-width: 400px) {

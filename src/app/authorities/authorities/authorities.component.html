@@ -1,15 +1,15 @@
-<nav>
-  <a *ngFor="let authority of authorities" routerLink="{{authority.url}}">
-    <span>{{authority.name}}</span>
-  </a>
-  <div class="fill-the-rest"></div>
-</nav>
-<div>
 
-<router-outlet></router-outlet>
+<div class="container">
+
+  <nav>
+    <a *ngFor="let authority of authorities" routerLink="{{authority.url}}">
+      <span>{{authority.name}}</span>
+    </a>
+    <div class="fill-the-rest"></div>
+  </nav>
+  <div>
+
+    <router-outlet></router-outlet>
+  </div>
+
 </div>
-<!--
-<div class="btn-wrapper">
-  <button class="btn">Previous</button>
-  <button class="btn">Next</button>
-</div>-->

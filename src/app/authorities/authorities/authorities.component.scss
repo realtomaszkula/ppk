@@ -1,6 +1,6 @@
 @import '../../../global';
 
-:host {
+.container {
   display: flex;
   flex-direction: row;
 }
@@ -54,7 +54,7 @@ nav {
     }
   }
 
-  :host {
+  .container {
     flex-wrap: wrap;
   }
 }
