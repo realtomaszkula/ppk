@@ -17,7 +17,7 @@ $main-background-color: #fafafa;
   letter-spacing: 0.1em;
   font-weight: 700;
   border: none;
-  border-radius: 2em;
+  // border-radius: 1em;
 
   &:active, &:focus {
     outline: 0 none;
@@ -28,10 +28,20 @@ $main-background-color: #fafafa;
 
 }
 
+.icon-button {
+  cursor: pointer;
+  padding: 0.4em;
+  font-size: 2em;
+  color: white;
+  background: $accent-color;
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.4);
+}
+
 .toolbar {
   color: white;
   background-color: $primary-color;
-  border-radius: 0.5em 0.5em 0 0;
+  // border-radius: 0.5em 0.5em 0 0;
   padding: 1em;
 }
 

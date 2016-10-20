@@ -5,18 +5,20 @@
 	</figure>
 	<section>
     <p>{{welcomeMsg}}</p>
-		<div class="social-media">
+		<!--<div class="social-media">
 			<i class="material-icons">home</i>
 			<i class="material-icons">home</i>
 			<i class="material-icons">home</i>
-		</div>
+		</div>-->
   </section>
 </main>
 
 <div class="tabs-wrapper">
 	<section *ngFor="let tab of tabs" class="card">
 		<h1>{{tab.title}}</h1>
-		<i class="material-icons">{{tab.icon}}</i>
+		<span>
+			<i class="material-icons icon-button">{{tab.icon}}</i>
+		</span>
 		<p>{{tab.content}}</p>
 		<button class="btn">Visit</button>
 	</section>
