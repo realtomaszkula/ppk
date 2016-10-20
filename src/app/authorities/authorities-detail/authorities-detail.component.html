@@ -2,8 +2,8 @@
 
 <section>
 
-  <h2>{{person.name}}</h2>
-  {{person.content}}
+  <h2>{{name}}</h2>
+  <p *ngFor="let twoSentences of content">{{twoSentences}}</p>
 
 </section>
 <figure>

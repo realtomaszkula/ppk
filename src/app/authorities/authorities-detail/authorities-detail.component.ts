@@ -11,7 +11,34 @@ import { authoritiesMap, Person } from './details';
 export class AuthoritiesDetailComponent implements OnInit {
 
   authorities: Map<string, Person> = authoritiesMap;
-  person: Person;
+
+  _person: Person;
+
+  name: string;
+  content: string[];
+
+  set person(person: Person) {
+    this.name = person.name;
+    this.content = this.splitIntoArrayOfTwoSentences(person.content);
+    this._person = person;
+  }
+
+  get person() {
+    return this._person;
+  }
+
+  private splitIntoArrayOfTwoSentences(content: string): string[] {
+   return content.split(/\.\s/).reduce((acc, curr) => {
+      const lastItem = acc[acc.length - 1];
+
+      if (Array.isArray(lastItem) && lastItem.length === 1) {
+        lastItem.push(curr) 
+      } else {
+        acc = [ ...acc, [curr]]
+      }  
+      return acc;
+    }, [])
+  }
 
   constructor(private route: ActivatedRoute, private router: Router) {
     this.route.params.forEach((params: Params) => {
