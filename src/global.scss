@@ -83,6 +83,10 @@ a {
   transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.shadowed {
+  box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
 .selectable:hover {
   box-shadow:  20px 20px 40px -11px rgba(0, 0, 0, 0.5)
 }
