@@ -80,6 +80,11 @@ a {
     5px 6px 7px 2px rgba(0, 0, 0, 0.1), 
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.selectable:hover {
+  box-shadow:  20px 20px 40px -11px rgba(0, 0, 0, 0.5)
 }
 
 button:disabled, button:disabled:hover {

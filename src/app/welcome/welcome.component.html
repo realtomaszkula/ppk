@@ -14,7 +14,7 @@
 </main>
 
 <div class="tabs-wrapper">
-	<section *ngFor="let tab of tabs" class="card">
+	<section *ngFor="let tab of tabs" class="card selectable">
 		<h1>{{tab.title}}</h1>
 		<a routerLink="{{tab.url}}">
 			<i class="material-icons icon-button-lg">{{tab.icon}}</i>

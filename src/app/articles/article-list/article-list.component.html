@@ -4,7 +4,7 @@
 	<section>
 
 		<!-- refactor to use ngFor later-->
-		<article class="card">
+		<article class="card selectable">
 			<h1>Burnout</h1>
 			<a routerLink="{{'stress/burnout'}}">	
 			<i class="material-icons icon-button-lg">home</i>
@@ -13,7 +13,7 @@
 			<a class="btn" routerLink="{{'stress/burnout'}}">Read more</a>
 		</article>
 
-		<article class="card">
+		<article class="card selectable">
 			<h1>Mental Toughness</h1>
 			<a routerLink="{{'stress/mental-toughness'}}">	
 			<i class="material-icons icon-button-lg">home</i>
@@ -22,7 +22,7 @@
 			<a class="btn" routerLink="{{'stress/mental-toughness'}}">Read more</a>
 		</article>
 
-		<article class="card">
+		<article class="card selectable">
 			<h1>Sensation Seeking</h1>
 			<a routerLink="{{'stress/sensation-seeking'}}">	
 			<i class="material-icons icon-button-lg">home</i>
@@ -31,7 +31,7 @@
 			<a class="btn" routerLink="{{'stress/sensation-seeking'}}">Read more</a>
 		</article>
 
-		<article class="card">
+		<article class="card selectable">
 			<h1>Personality Types</h1>
 			<a routerLink="{{'stress/personality-types'}}">	
 			<i class="material-icons icon-button-lg">home</i>
@@ -40,7 +40,7 @@
 			<a class="btn" routerLink="{{'stress/personality-types'}}">Read more</a>
 		</article>
 
-		<article class="card">
+		<article class="card selectable">
 			<h1>Stress Scale</h1>
 			<a routerLink="{{'stress/stress-scale'}}">	
 			<i class="material-icons icon-button-lg">home</i>
@@ -55,7 +55,7 @@
 
 	<!--<h2 class="toolbar">Other Articles</h2>
 	<section>
-		<article *ngFor="let summary of articlesSummaries | async" class="card">
+		<article *ngFor="let summary of articlesSummaries | async" class="card selectable">
 			<h1>{{summary.name}}</h1>
 			<i class="material-icons">{{summary.icon}}</i>
 			<p>{{summary.excerpt}}</p>
