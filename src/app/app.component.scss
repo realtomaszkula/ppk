@@ -2,8 +2,10 @@
 
 .body {
     background: $main-background-color;
-
+    line-height: 1.5;
 }
+
+
 
 .site {
   display: flex;
@@ -95,6 +97,15 @@ nav {
         background: lighten($primary-color, 50%);
     }
     &:visited {
+      color: $nav-color;
+    }
+    &:link {
+      color: $nav-color;
+    }
+    &:active {
+      color: $nav-color;
+    }
+    &:focus {
       color: $nav-color;
     }
   }
