@@ -28,14 +28,25 @@ $main-background-color: #fafafa;
 
 }
 
-.icon-button {
+@mixin icon-button {
   cursor: pointer;
-  padding: 0.4em;
-  font-size: 2em;
+
   color: white;
   background: $accent-color;
   border-radius: 50%;
   box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.4);
+}
+
+.icon-button-lg {
+ @include icon-button();
+  padding: 0.4em;
+  font-size: 2em;
+}
+
+.icon-button-sm {
+ @include icon-button();
+  padding: 0.4em;
+  font-size: 1em;
 }
 
 .toolbar {
@@ -90,3 +101,11 @@ fieldset.ng-invalid {
   box-shadow: 6px 5px 16px 2px rgba(0, 0, 0, 0.2);
 }
 
+.question {
+  display: flex;
+  flex-direction: column;
+  background: lighten($primary-color, 50%);
+  padding: 1em;
+  border-left: 3px solid $primary-color;
+  margin-bottom: 1em;
+}

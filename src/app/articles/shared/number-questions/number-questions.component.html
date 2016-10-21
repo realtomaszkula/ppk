@@ -1,15 +1,13 @@
 	<form #f="ngForm" (ngSubmit)="onSubmit(f)" *ngIf="active" novalidate>
-		<!-- ng model group is used to style the border around fieldset-->
-		<div *ngFor="let q of questions; let index = index">
-			<fieldset  >
 
-				<legend>
-					{{q.content}}
-				</legend>
+		<div *ngFor="let q of questions; let index = index" >
+			<section  class="question">
+				<p>{{q.content}}</p>
+				<span>
+				<input type="number" id="{{q.value}}" [(ngModel)]="q.value" name="{{index}}" min="{{min}}" max="{{max}}">
 
-				<input type="number" [(ngModel)]="q.value" name="{{index}}" min="{{min}}" max="{{max}}">
-
-			</fieldset>
+				</span>
+			</section>
 
 			<app-line-break [index]="index" [length]="questions.length"	></app-line-break>
 

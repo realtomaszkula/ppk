@@ -5,19 +5,9 @@
 }
 
 
-.question {
-  display: flex;
-  flex-direction: column;
-  background: lighten($primary-color, 50%);
-  padding: 1em;
-  border-left: 3px solid $primary-color;
-  margin-bottom: 1em;
-  
-  p {
-    margin: 0 0 1em 0;
-  }
+p {
+  margin: 0 0 1em 0;
 }
-
 
 // radio button styles
 

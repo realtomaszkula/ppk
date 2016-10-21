@@ -17,7 +17,7 @@
 	<section *ngFor="let tab of tabs" class="card">
 		<h1>{{tab.title}}</h1>
 		<a routerLink="{{tab.url}}">
-			<i class="material-icons icon-button">{{tab.icon}}</i>
+			<i class="material-icons icon-button-lg">{{tab.icon}}</i>
 		</a >
 		<p>{{tab.content}}</p>
 		<a class="btn" routerLink="{{tab.url}}">Visit</a>

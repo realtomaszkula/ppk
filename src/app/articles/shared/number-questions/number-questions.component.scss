@@ -1,1 +1,19 @@
 @import '../../../../global';
+
+// .question {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+input[type=number] {
+  text-align: center;
+  font-size: 1em;
+}
+
+section {
+  display: block
+}
+
+p {
+  margin: 0 0 1em 0;
+}
