@@ -3,14 +3,15 @@
 
 section {
   display: flex;
-  margin: 4em 0;
+  margin: 2em 0;
 }
 
-hr {
-  border-color: $primary-color;
+.line {
+  border-top: 1px solid black;
   flex: 1 auto;
+  transform: translateY(50%)
 }
 
-span {
-  margin: 0 2em;
+.text {
+  padding: 1em;
 }
