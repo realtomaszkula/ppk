@@ -16,6 +16,7 @@
       "mobile": false,
       "styles": [
         "styles.scss"
+    
       ],
       "scripts": [],
       "environments": {

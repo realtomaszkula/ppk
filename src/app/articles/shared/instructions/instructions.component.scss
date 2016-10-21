@@ -1,0 +1,13 @@
+@import '../../../../global';
+
+ol {
+  background: lighten($primary-color, 50%);
+  border-left: 3px solid $primary-color;
+
+  padding: 1em;
+
+  li {
+    margin: 1em;
+  }
+  
+}
