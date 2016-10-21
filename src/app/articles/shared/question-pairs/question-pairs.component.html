@@ -1,14 +1,15 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f)" *ngIf="active" novalidate>
-	<fieldset *ngFor="let pair of questionPairs; let i = index;">
-		<legend>{{ 'Q' + (i + 1) }}</legend>
-		<div *ngFor="let question of pair">
-			<input type="radio" name="{{'Q' + i}}" [value]="question.value" (ngModel)="question.value" required>
-			<span>{{ question.content }}</span>
+	<section *ngFor="let pair of questionPairs; let i = index;" class="question">
+		<p>{{ 'Q' + (i + 1) }}</p>
+		<div *ngFor="let question of pair; let idx = index;">
+
+			<input type="radio" [attr.id]="question.content + idx" name="{{'Q' + i}}" [value]="question.value" ngModel required>
+			<label [attr.for]="question.content + idx">{{ question.content }}</label>
 		</div>
-	</fieldset>
+	</section>
 
 	<div class="submit-buttons">
-		<button class="btn" [disabled]="!f.control.valid || f.untouched">Submit</button>
+		<button class="btn" [disabled]="!f.control.valid || !f.dirty">Submit</button>
 		<button class="btn" (click)="reset()">Reset	</button>
 	</div>
 

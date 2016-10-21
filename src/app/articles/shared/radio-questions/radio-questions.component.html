@@ -1,6 +1,5 @@
 	<h2>Questions</h2>
 	<form #f="ngForm" (ngSubmit)="onSubmit(f)" *ngIf="active" novalidate>
-		<!-- ng model group is used to style the border around fieldset-->
 		
 		<div *ngFor="let q of questions; let index = index">
 			<section class="question" >

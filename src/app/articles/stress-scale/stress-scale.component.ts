@@ -25,9 +25,9 @@ export class StressScaleComponent implements OnInit {
   ]
 
   questions: QuestionWithWeight[] = [
-    new QuestionWithWeight('Śmierć współmałżonka',100, 0),
-    new QuestionWithWeight('Rozwód',	73, 0),
-    new QuestionWithWeight('Separacja',	65, 0),
+    new QuestionWithWeight('Śmierć współmałżonka',100),
+    new QuestionWithWeight('Rozwód',	73),
+    new QuestionWithWeight('Separacja',	65),
     new QuestionWithWeight('Kara więzienia',	63),
     new QuestionWithWeight('Śmierć członka bliskiej rodziny',	63),
     new QuestionWithWeight('Zranienie lub choroba',	53),
