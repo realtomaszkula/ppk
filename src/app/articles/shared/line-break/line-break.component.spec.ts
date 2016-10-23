@@ -27,23 +27,44 @@ describe('Component: LineBreak', () => {
   const getLineBreak = () => fixture.debugElement.queryAll(By.css('.line-break'));
 
   it('should create line break when ten items left ', () => {
+    // last item in arr is arr.length - 1, so passing length 10 + 1;
     component.index = 24;
     component.length = 35;
 
     fixture.detectChanges();
     expect(getLineBreak().length).toBe(1);
+    expect(component.show).toBe(true);
 
     component.index = 34;
     component.length = 45;
 
     fixture.detectChanges();
     expect(getLineBreak().length).toBe(1);
+    expect(component.show).toBe(true);
 
     component.index = 44;
     component.length = 55;
 
     fixture.detectChanges();
     expect(getLineBreak().length).toBe(1);
+    expect(component.show).toBe(true);
+  });
+
+  it('should NOT create line break for first 20 items', () => {
+      component.index = 4;
+      component.length = 35;
+
+      fixture.detectChanges();
+      expect(getLineBreak().length).toBe(0); 
+      expect(component.show).toBe(false);
+
+      component.index = 4;
+      component.length = 35;
+
+      fixture.detectChanges();
+      expect(getLineBreak().length).toBe(0);
+      expect(component.show).toBe(false);
+
   });
 
   it('should NOT create line break when ten items left but length < 15', () => {
@@ -52,14 +73,16 @@ describe('Component: LineBreak', () => {
 
     fixture.detectChanges();
     expect(getLineBreak().length).toBe(0);
+    expect(component.show).toBe(false);
   });
 
 
-  it('should NOT craete line break when index === length', () => {
-    component.index = 45;
+  it('should NOT craete line break after last item', () => {
+    component.index = 44;
     component.length = 45;
 
     fixture.detectChanges();
     expect(getLineBreak().length).toBe(0);
+    expect(component.show).toBe(false);
   });
 });
