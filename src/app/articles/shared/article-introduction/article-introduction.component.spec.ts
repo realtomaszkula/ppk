@@ -27,8 +27,6 @@ describe('Component: ArticleIntroduction', () => {
 
   }))
 
-
-
     it('should create an instance', () => {
       let component = new ArticleIntroductionComponent();
       expect(component).toBeTruthy();
