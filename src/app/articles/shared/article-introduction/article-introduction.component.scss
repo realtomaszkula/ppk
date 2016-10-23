@@ -2,15 +2,14 @@
 
 main {
   display: flex;
+  justify-content: space-between;
   background: $primary-color;
   color: white;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
+
 }
 
 span {
   font-size: 2em;
 }
 
-.fill-remaining {
-  flex: 1 0 auto;
-}
